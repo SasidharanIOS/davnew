@@ -103,6 +103,19 @@ Please confirm the availability for this demo session.`;
               alt="Premium Home Cinema Demo Room"
               className="w-full h-full object-cover"
             />
+            {/* DAV Logo in top left corner */}
+            <div className="absolute top-6 left-6 z-10">
+              <a href="/" className="block">
+                <img 
+                  src="/dav.png" 
+                  alt="DAV Logo" 
+                  className="h-12 w-auto hover:opacity-80 transition-opacity"
+                  onError={(e) => {
+                    e.target.src = 'https://via.placeholder.com/120x48/ffffff/000000?text=DAV';
+                  }}
+                />
+              </a>
+            </div>
             {/* Demo Booking Text Overlay */}
             <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
               <div className="text-center text-white">
@@ -110,13 +123,6 @@ Please confirm the availability for this demo session.`;
                   DEMO BOOKING
                 </h1>
               </div>
-            </div>
-            {/* Company Name in Top Left */}
-            <div className="absolute top-6 left-6 text-white">
-              <h3 className="text-lg font-bold">DAV</h3>
-              <p className="text-sm font-light opacity-90">
-                Divine Audio Vision
-              </p>
             </div>
           </div>
 
@@ -361,19 +367,10 @@ Please confirm the availability for this demo session.`;
               </h2>
               <div className="space-y-4 text-gray-200">
                 <div className="flex justify-between items-center">
-                  <span className="text-sm md:text-base font-light">Monday - Friday</span>
-                  <span className="text-blue-400 font-semibold">10:00 AM - 7:00 PM</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm md:text-base font-light">Saturday</span>
-                  <span className="text-blue-400 font-semibold">10:00 AM - 4:00 PM</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm md:text-base font-light">Sunday</span>
-                  <span className="text-red-400 font-semibold">Closed</span>
+                  <span className="text-sm md:text-base font-light">Monday - Sunday</span>
+                  <span className="text-blue-400 font-semibold">09:00 AM - 9:00 PM</span>
                 </div>
                 <div className="pt-4 border-t border-gray-600">
-                  
                   <p className="text-xs md:text-sm text-gray-300 font-light mt-1">
                     Please arrive 15 minutes before scheduled time
                   </p>
@@ -407,7 +404,7 @@ Please confirm the availability for this demo session.`;
                 BOOKING INFO
               </h2>
               <div className="text-gray-600 text-sm md:text-base font-light leading-relaxed mb-8 space-y-3">
-                <p>• Demo sessions are available Monday to Saturday</p>
+                <p>• Demo sessions are available Monday to Sunday</p>
                 <p>• Please arrive 15 minutes before your scheduled time</p>
                 <p>• We'll confirm your booking via WhatsApp within 24 hours</p>
                 <p>• Demo sessions are available for Short Film Launch, Movie Preview Session Booking, Daily Scratch, and Project-Based Demo</p>

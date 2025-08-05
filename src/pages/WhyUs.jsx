@@ -1,8 +1,42 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const WhyUs = () => {
+  const [showLogo, setShowLogo] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const windowHeight = window.innerHeight;
+      
+      // Calculate which section we're in and if we're in the top 20% of that section
+      const sectionHeight = windowHeight;
+      const currentSection = Math.floor(scrollY / sectionHeight);
+      const positionInSection = scrollY % sectionHeight;
+      const percentageInSection = positionInSection / sectionHeight;
+      
+      // Show logo only in the top 20% of each section
+      setShowLogo(percentageInSection <= 0.2);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Check initial position
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className="min-h-screen bg-gray-100 font-outfit">
+      {/* Fixed Header with Logo */}
+      <header className={`fixed top-0 left-0 z-50 p-6 transition-opacity duration-300 ${showLogo ? 'opacity-100' : 'opacity-0'}`}>
+        <a href="/" className="block">
+          <img 
+            src="/dav.png" 
+            alt="DAV Logo" 
+            className="h-12 w-auto hover:opacity-80 transition-opacity"
+          />
+        </a>
+      </header>
+      
       {/* Header Section - Half screen height */}
       <div
         className="relative bg-cover bg-center"
@@ -38,7 +72,7 @@ const WhyUs = () => {
               Dealer with a Difference
             </h2>
             <p className="text-sm font-light mb-4 leading-relaxed">
-              At Divine Audio Vision, our uniquely diverse skillset and 8 years track record
+              At Divine Audio Vision, our uniquely diverse skillset and 10 years track record
               makes us something of a rare beast among distributors.
             </p>
             <p className="text-sm font-light mb-4 leading-relaxed">
@@ -96,7 +130,7 @@ const WhyUs = () => {
               <p className="text-sm font-light max-w-xs leading-relaxed">
                 Adding value through the integration of our manufacturers'
                 technology due to our unparalleled experience gained in the last
-                8 years
+                10 years
               </p>
             </div>
           </div>
@@ -127,24 +161,7 @@ const WhyUs = () => {
 
       {/* Bottom Section with Added Spacing */}
       <div className="py-16 px-8 bg-white">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {/* Distribution Channels */}
-          <div className="p-8">
-            <div className="mb-6">
-              <img
-                src="/dc.jpg"
-                alt="Distribution Channels"
-                className="w-full aspect-square object-cover rounded"
-              />
-            </div>
-            <h4 className="text-lg font-semibold mb-3">
-              DEALER CHANNELS
-            </h4>
-            <p className="text-sm text-gray-600 font-light leading-relaxed">
-              Reaching the market through a network of distributors selected in
-              order to maintain control over the dealer channel
-            </p>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
 
           {/* Automation Audiovisual - Moved Down */}
           <div className="p-8 mt-8">
@@ -174,7 +191,7 @@ const WhyUs = () => {
               />
             </div>
             <h4 className="text-lg font-semibold mb-3">VERTICAL MARKETS</h4>
-            <p className="text-sm text-gray-600 font-light leading-relaxed">
+            <p className="text-sm text-gray-600 font-regular leading-relaxed">
               Developing specific solutions for vertical markets: Residential,
               Corporate, Education, Public Sector, Hospitality
             </p>

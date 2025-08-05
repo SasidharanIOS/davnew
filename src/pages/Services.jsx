@@ -3,6 +3,17 @@ import React from 'react';
 const Services = () => {
   return (
     <div className="min-h-screen bg-black text-white font-outfit">
+      {/* Fixed Header with Logo */}
+      <header className="fixed top-0 left-0 z-50 p-6">
+        <a href="/" className="block">
+          <img 
+            src="/dav.png" 
+            alt="DAV Logo" 
+            className="h-12 w-auto hover:opacity-80 transition-opacity"
+          />
+        </a>
+      </header>
+
       {/* Header Section with Solutions */}
       <div className="relative h-[70vh] bg-cover bg-center" style={{backgroundImage: 'url(/solutions.jpg)'}}>
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>

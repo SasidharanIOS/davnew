@@ -4,34 +4,44 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* About Us & Founder's Voice Section */}
-      <section class="h-[65vh]">
-        <div class="grid md:grid-cols-2 h-full">
-          <div class="h-full relative">
+      <section className="h-[65vh]">
+        <div className="grid md:grid-cols-2 h-full">
+          <div className="h-full relative">
             <img
               src="/aboutus.jpeg"
               alt="About Us"
-              class="w-full h-full object-cover"
+              className="w-full h-full object-cover"
+              onError={(e) => {
+                e.target.src = 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';
+              }}
             />
-            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-              <div class="text-center text-white">
-                <h1 class="font-outfit text-5xl md:text-7xl font-bold tracking-wide">
+            {/* DAV Logo in top left corner */}
+            <div className="absolute top-6 left-6 z-10">
+              <a href="/" className="block">
+                <img 
+                  src="/dav.png" 
+                  alt="DAV Logo" 
+                  className="h-12 w-auto hover:opacity-80 transition-opacity"
+                  onError={(e) => {
+                    e.target.src = 'https://via.placeholder.com/120x48/ffffff/000000?text=DAV';
+                  }}
+                />
+              </a>
+            </div>
+            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+              <div className="text-center text-white">
+                <h1 className="font-outfit text-5xl md:text-7xl font-bold tracking-wide">
                   About Us
                 </h1>
               </div>
             </div>
-            <div class="absolute top-6 left-6 text-white">
-              <h3 class="font-outfit text-lg font-semibold">DAV</h3>
-              <p class="font-outfit text-sm opacity-90">
-                Divine Audio Vision
-              </p>
-            </div>
           </div>
 
-          <div class="bg-gray-200 flex flex-col justify-center px-8 lg:px-16 text-black relative">
-            <h2 class="font-outfit text-3xl md:text-4xl font-semibold mb-6">
-              CO-FOUNDERS' VOICE
+          <div className="bg-gray-200 flex flex-col justify-center px-8 lg:px-16 text-black relative">
+            <h2 className="font-outfit text-3xl md:text-4xl font-semibold mb-6">
+              FOUNDER & CO-FOUNDER VOICE
             </h2>
-            <p class="font-outfit text-gray-700 text-sm md:text-base leading-relaxed mb-6">
+            <p className="font-outfit text-gray-700 text-sm md:text-base leading-relaxed mb-6">
               We understand your requirement and provide quality works. From the
               beginning of a project with a client, whether it is a small or
               large corporation, our Official Integrators have the certainty
@@ -42,21 +52,21 @@ const AboutUs = () => {
               best and most innovative market solutions. Because our success is
               based on yours!
             </p>
-            <div class="space-y-3">
+            <div className="space-y-3">
               <div>
-                <p class="font-outfit text-blue-600 font-semibold text-base">
-                  Nandha Kumar
+                <p className="font-outfit text-blue-600 font-semibold text-base">
+                  HARIHARAN
                 </p>
-                <p class="font-outfit text-gray-600 text-sm">
-                  Co-Founder, DAV Pvt Ltd
+                <p className="font-outfit text-gray-600 text-sm">
+                  Founder, DAV
                 </p>
               </div>
               <div>
-                <p class="font-outfit text-blue-600 font-semibold text-base">
-                  Hariharan
+                <p className="font-outfit text-blue-600 font-semibold text-base">
+                  NANDHA KUMAR
                 </p>
-                <p class="font-outfit text-gray-600 text-sm">
-                  Co-Founder, DAV Pvt Ltd
+                <p className="font-outfit text-gray-600 text-sm">
+                  Co-Founder, DAV
                 </p>
               </div>
             </div>
@@ -83,6 +93,9 @@ const AboutUs = () => {
               src="/visionmission.jpeg"
               alt="Vision & Mission"
               className="w-full h-full object-cover object-right"
+              onError={(e) => {
+                e.target.src = 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';
+              }}
             />
           </div>
         </div>
@@ -96,6 +109,9 @@ const AboutUs = () => {
               src="/create.jpeg"
               alt="Create"
               className="w-full h-full object-cover object-left"
+              onError={(e) => {
+                e.target.src = 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';
+              }}
             />
           </div>
           <div className="bg-black flex flex-col justify-center px-8 lg:px-16">
@@ -132,6 +148,9 @@ const AboutUs = () => {
               src="/contactus.jpeg"
               alt="Find Create Introduce"
               className="w-full h-full object-cover"
+              onError={(e) => {
+                e.target.src = 'https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';
+              }}
             />
           </div>
         </div>
@@ -145,6 +164,9 @@ const AboutUs = () => {
               src="/newtechnologies.jpg"
               alt="New Technologies"
               className="w-full h-full object-cover"
+              onError={(e) => {
+                e.target.src = 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';
+              }}
             />
           </div>
           <div className="bg-black flex flex-col justify-center px-8 lg:px-16">
@@ -184,6 +206,9 @@ const AboutUs = () => {
               src="/marketresearch.jpeg"
               alt="Market Research"
               className="w-full h-full object-cover"
+              onError={(e) => {
+                e.target.src = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';
+              }}
             />
           </div>
         </div>
@@ -197,6 +222,9 @@ const AboutUs = () => {
               src="/futuristicdrive.jpeg"
               alt="Futuristic Drive"
               className="w-full h-full object-cover"
+              onError={(e) => {
+                e.target.src = 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';
+              }}
             />
           </div>
           <div className="bg-black flex flex-col justify-center px-8 lg:px-16">
@@ -228,6 +256,9 @@ const AboutUs = () => {
               src="/contactus.jpeg"
               alt="Contact Us"
               className="w-full h-full object-cover"
+              onError={(e) => {
+                e.target.src = 'https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';
+              }}
             />
           </div>
         </div>

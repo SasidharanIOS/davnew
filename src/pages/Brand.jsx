@@ -219,7 +219,6 @@ const Brands = () => {
 
   return (
     <div className="min-h-screen bg-black text-white font-outfit">
-      
       {/* Hero Section with Title */}
       <section className="h-[65vh] relative">
         <div className="grid md:grid-cols-2 h-full">
@@ -232,6 +231,19 @@ const Brands = () => {
                 e.target.src = 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';
               }}
             />
+            {/* DAV Logo in top left corner */}
+            <div className="absolute top-6 left-6 z-10">
+              <a href="/" className="block">
+                <img 
+                  src="/dav.png" 
+                  alt="DAV Logo" 
+                  className="h-12 w-auto hover:opacity-80 transition-opacity"
+                  onError={(e) => {
+                    e.target.src = 'https://via.placeholder.com/120x48/ffffff/000000?text=DAV';
+                  }}
+                />
+              </a>
+            </div>
             {/* Brands Text Overlay */}
             <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
               <div className="text-center text-white">
@@ -239,13 +251,6 @@ const Brands = () => {
                   Our Brands
                 </h1>
               </div>
-            </div>
-            {/* Company Name in Top Left */}
-            <div className="absolute top-6 left-6 text-white">
-              <h3 className="text-lg font-bold">DAV</h3>
-              <p className="text-sm font-light opacity-90">
-                Divine Audio Vision
-              </p>
             </div>
           </div>
 
