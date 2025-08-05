@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom font classes */
+.font-elegant {
+  font-family: 'Inter';
+  letter-spacing: 0.05em;
+}
+
+.font-corporate {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.00em;
+}
+
+.font-body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+.font-outfit {
+  font-family: 'Outfit', sans-serif;
+}
+
+body, #root {
+  @apply font-body;
+}
