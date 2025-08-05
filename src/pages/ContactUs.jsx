@@ -187,17 +187,14 @@ Sent from Company Website`;
               <div className="space-y-6 text-gray-700">
                 <div>
                   <p className="text-blue-600 font-semibold mb-2">EMAIL</p>
-                  <p className="text-sm md:text-base">info@yourcompany.com</p>
+                  <p className="text-sm md:text-base">info@divineaudiovision.com</p>
                 </div>
                 <div>
                   <p className="text-blue-600 font-semibold mb-2">PHONE</p>
-                  <p className="text-sm md:text-base">+91 93723 13616</p>
-                  <p className="text-sm md:text-base">022-40145073</p>
+                  <p className="text-sm md:text-base">+91 84891 81010</p>
+                  <p className="text-sm md:text-base">+91 99402 08177</p>
                 </div>
-                <div>
-                  <p className="text-blue-600 font-semibold mb-2">WEBSITE</p>
-                  <p className="text-sm md:text-base">www.yourcompany.com</p>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -216,9 +213,9 @@ Sent from Company Website`;
                 <div>
                   <p className="text-blue-600 font-semibold mb-2">ADDRESS</p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    DAV Divine Audio Vision<br/>
-                    123 Business District<br/>
-                    Erode - 638001<br/>
+                    Divine Audio Vision<br/>
+                    139/10,Vishnu complex,Karur byepass road,Solar<br/>
+                    Erode - 638002<br/>
                     Tamil Nadu, India
                   </p>
                 </div>
@@ -270,9 +267,9 @@ Sent from Company Website`;
                 <div>
                   <p className="text-blue-600 font-semibold mb-2">ADDRESS</p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    DAV Divine Audio Vision<br/>
-                    456 Tech Park<br/>
-                    Chennai - 600001<br/>
+                    Divine Audio Vision<br/>
+                    V.T.N. Arihant Presidency, Ground Floor Shop No.8,T.Nagar<br/>
+                    Chennai 600017.OPP TO KALYAN JEWELLERS<br/>
                     Tamil Nadu, India
                   </p>
                 </div>
@@ -298,17 +295,10 @@ Sent from Company Website`;
               </h2>
               <div className="space-y-4 text-gray-200">
                 <div className="flex justify-between items-center">
-                  <span className="text-sm md:text-base">Monday - Friday</span>
-                  <span className="text-blue-400 font-semibold">9:00 AM - 6:00 PM</span>
+                  <span className="text-sm md:text-base">Monday - Sunday</span>
+                  <span className="text-blue-400 font-semibold">9:00 AM - 10:00 PM</span>
                 </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm md:text-base">Saturday</span>
-                  <span className="text-blue-400 font-semibold">10:00 AM - 4:00 PM</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm md:text-base">Sunday</span>
-                  <span className="text-red-400 font-semibold">Closed</span>
-                </div>
+                
                 <div className="pt-4 border-t border-gray-600">
                   <p className="text-xs md:text-sm text-gray-300">
                     Emergency support available 24/7 for ongoing projects

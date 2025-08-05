@@ -4,36 +4,34 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* About Us & Founder's Voice Section */}
-      <section className="h-[65vh]">
-        <div className="grid md:grid-cols-2 h-full">
-          <div className="h-full relative">
+      <section class="h-[65vh]">
+        <div class="grid md:grid-cols-2 h-full">
+          <div class="h-full relative">
             <img
               src="/aboutus.jpeg"
               alt="About Us"
-              className="w-full h-full object-cover"
+              class="w-full h-full object-cover"
             />
-            {/* About Us Text Overlay */}
-            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-              <div className="text-center text-white">
-                <h1 className="font-outfit text-5xl md:text-7xl font-bold tracking-wide">
+            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+              <div class="text-center text-white">
+                <h1 class="font-outfit text-5xl md:text-7xl font-bold tracking-wide">
                   About Us
                 </h1>
               </div>
             </div>
-            {/* Company Name in Top Left */}
-            <div className="absolute top-6 left-6 text-white">
-              <h3 className="font-outfit text-lg font-semibold">DAV</h3>
-              <p className="font-outfit text-sm opacity-90">
+            <div class="absolute top-6 left-6 text-white">
+              <h3 class="font-outfit text-lg font-semibold">DAV</h3>
+              <p class="font-outfit text-sm opacity-90">
                 Divine Audio Vision
               </p>
             </div>
           </div>
 
-          <div className="bg-gray-200 flex flex-col justify-center px-8 lg:px-16 text-black relative">
-            <h2 className="font-outfit text-3xl md:text-4xl font-semibold mb-6">
-              FOUNDER'S VOICE
+          <div class="bg-gray-200 flex flex-col justify-center px-8 lg:px-16 text-black relative">
+            <h2 class="font-outfit text-3xl md:text-4xl font-semibold mb-6">
+              CO-FOUNDERS' VOICE
             </h2>
-            <p className="font-outfit text-gray-700 text-sm md:text-base leading-relaxed mb-4">
+            <p class="font-outfit text-gray-700 text-sm md:text-base leading-relaxed mb-6">
               We understand your requirement and provide quality works. From the
               beginning of a project with a client, whether it is a small or
               large corporation, our Official Integrators have the certainty
@@ -44,13 +42,23 @@ const AboutUs = () => {
               best and most innovative market solutions. Because our success is
               based on yours!
             </p>
-            <div>
-              <p className="font-outfit text-blue-600 font-semibold text-base">
-                Hariharan
-              </p>
-              <p className="font-outfit text-gray-600 text-sm">
-                Founder, DAV Pvt Ltd
-              </p>
+            <div class="space-y-3">
+              <div>
+                <p class="font-outfit text-blue-600 font-semibold text-base">
+                  Nandha Kumar
+                </p>
+                <p class="font-outfit text-gray-600 text-sm">
+                  Co-Founder, DAV Pvt Ltd
+                </p>
+              </div>
+              <div>
+                <p class="font-outfit text-blue-600 font-semibold text-base">
+                  Hariharan
+                </p>
+                <p class="font-outfit text-gray-600 text-sm">
+                  Co-Founder, DAV Pvt Ltd
+                </p>
+              </div>
             </div>
           </div>
         </div>

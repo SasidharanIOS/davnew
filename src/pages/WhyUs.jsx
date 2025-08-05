@@ -35,10 +35,10 @@ const WhyUs = () => {
         <div className="bg-black text-white p-8 flex items-center">
           <div className="max-w-lg">
             <h2 className="text-2xl md:text-3xl font-bold mb-6">
-              Distribution with a Difference
+              Dealer with a Difference
             </h2>
             <p className="text-sm font-light mb-4 leading-relaxed">
-              At Miantic, our uniquely diverse skillset and 8 years track record
+              At Divine Audio Vision, our uniquely diverse skillset and 8 years track record
               makes us something of a rare beast among distributors.
             </p>
             <p className="text-sm font-light mb-4 leading-relaxed">
@@ -49,7 +49,7 @@ const WhyUs = () => {
             </p>
             <p className="text-sm font-light leading-relaxed">
               The range of services we offer to our clients is precisely
-              tailored to the needs of their business, from simple distribution,
+              tailored to the needs of their business, from simple dealer,
               branding and support.
             </p>
           </div>
@@ -138,11 +138,11 @@ const WhyUs = () => {
               />
             </div>
             <h4 className="text-lg font-semibold mb-3">
-              DISTRIBUTION CHANNELS
+              DEALER CHANNELS
             </h4>
             <p className="text-sm text-gray-600 font-light leading-relaxed">
               Reaching the market through a network of distributors selected in
-              order to maintain control over the distribution channel
+              order to maintain control over the dealer channel
             </p>
           </div>
 

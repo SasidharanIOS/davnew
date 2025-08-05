@@ -135,7 +135,7 @@ Please confirm the availability for this demo session.`;
                   Premium Demo Experience
                 </p>
                 <p className="text-gray-500 text-sm font-light">
-                  Available Monday to Saturday
+                  Available Monday to Sunday
                 </p>
               </div>
             </div>
@@ -373,9 +373,7 @@ Please confirm the availability for this demo session.`;
                   <span className="text-red-400 font-semibold">Closed</span>
                 </div>
                 <div className="pt-4 border-t border-gray-600">
-                  <p className="text-xs md:text-sm text-gray-300 font-light">
-                    Session duration: 10 minutes to 5 hours based on your movie
-                  </p>
+                  
                   <p className="text-xs md:text-sm text-gray-300 font-light mt-1">
                     Please arrive 15 minutes before scheduled time
                   </p>
@@ -410,10 +408,9 @@ Please confirm the availability for this demo session.`;
               </h2>
               <div className="text-gray-600 text-sm md:text-base font-light leading-relaxed mb-8 space-y-3">
                 <p>• Demo sessions are available Monday to Saturday</p>
-                <p>• Session duration: 10 minutes to 5 hours based on your movie</p>
                 <p>• Please arrive 15 minutes before your scheduled time</p>
                 <p>• We'll confirm your booking via WhatsApp within 24 hours</p>
-                <p>• Bring your favorite movie for the ultimate experience</p>
+                <p>• Demo sessions are available for Short Film Launch, Movie Preview Session Booking, Daily Scratch, and Project-Based Demo</p>
               </div>
               <div className="space-y-4">
                 <button
@@ -424,7 +421,7 @@ Please confirm the availability for this demo session.`;
                   {isSubmitting ? 'Booking Demo...' : 'Book Demo Session'}
                 </button>
                 <a
-                  href={`https://wa.me/919372313616`}
+                  href={`https://wa.me/918489181010`}
                   className="border border-green-500 text-green-600 font-medium px-8 py-3 rounded hover:bg-green-50 hover:border-green-600 transition-all duration-300 inline-block text-center w-full md:w-auto ml-0 md:ml-4"
                 >
                   WhatsApp Direct

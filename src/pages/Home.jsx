@@ -1,10 +1,44 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ChevronRight, Menu, X, Phone, Mail, MapPin } from "lucide-react";
 
 const Home = () => {
+  const [showLogo, setShowLogo] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const windowHeight = window.innerHeight;
+      
+      // Calculate which section we're in and if we're in the top 20% of that section
+      const sectionHeight = windowHeight;
+      const currentSection = Math.floor(scrollY / sectionHeight);
+      const positionInSection = scrollY % sectionHeight;
+      const percentageInSection = positionInSection / sectionHeight;
+      
+      // Show logo only in the top 20% of each section
+      setShowLogo(percentageInSection <= 0.2);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Check initial position
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className="min-h-screen bg-gray-900 text-white font-outfit">
+      {/* Fixed Header with Logo */}
+      <header className={`fixed top-0 left-0 z-50 p-6 transition-opacity duration-300 ${showLogo ? 'opacity-100' : 'opacity-0'}`}>
+        <Link to="/" className="block">
+          <img 
+            src="/dav.png" 
+            alt="DAV Logo" 
+            className="h-12 w-auto hover:opacity-80 transition-opacity"
+          />
+        </Link>
+      </header>
+
       <section
         id="welcome"
         className="min-h-screen flex items-end pb-40 relative bg-cover bg-center"
@@ -42,7 +76,7 @@ const Home = () => {
                   About Us
                 </h2>
                 <p className="text-lg md:text-xl text-white mb-8 leading-relaxed font-light">
-                  DAV Distribution is India's leading specialist distributor of
+                  Divine Audio Vision is India's leading specialist dealer of
                   market leading technology for today's automated smart home,
                   supplying professional installers with innovative, award
                   winning products and integrated whole home solutions.
@@ -97,8 +131,8 @@ const Home = () => {
                 Brands
               </h2>
               <p className="text-lg md:text-xl text-white mb-8 leading-relaxed font-light">
-                DAV Distribution is the premier provider of control systems and
-                audio visual distribution solutions. Backed up with a team of
+                Divine Audio Vision is the premier provider of control systems and
+                audio visual equipment solutions. Backed up with a team of
                 engineers, design consultants and sales staff, providing full
                 turnkey solutions for your projects.
               </p>
