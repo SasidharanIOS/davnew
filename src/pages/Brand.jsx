@@ -175,9 +175,9 @@ const Brands = () => {
     },
     {
       id: 20,
-      name: 'Kords',
+      name: 'Kordz',
       category: 'CABLES',
-      logo: '/cords.png',
+      logo: '/kordz.jpg',
       description: 'Premium audio cables'
     },
     {
