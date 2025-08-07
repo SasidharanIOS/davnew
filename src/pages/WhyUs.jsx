@@ -73,7 +73,7 @@ const WhyUs = () => {
             </h2>
             <p className="text-sm font-light mb-4 leading-relaxed">
               At Divine Audio Vision, our uniquely diverse skillset and 10 years track record
-              makes us something of a rare beast among distributors.
+              makes us something of a rare beast among dealers.
             </p>
             <p className="text-sm font-light mb-4 leading-relaxed">
               We don't simply move boxes, we add-value at every level of our

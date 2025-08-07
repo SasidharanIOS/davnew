@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
@@ -12,18 +13,20 @@ const AboutUs = () => {
               alt="About Us"
               className="w-full h-full object-cover"
               onError={(e) => {
-                e.target.src = 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';
+                e.target.src =
+                  "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80";
               }}
             />
             {/* DAV Logo in top left corner */}
             <div className="absolute top-6 left-6 z-10">
               <a href="/" className="block">
-                <img 
-                  src="/dav.png" 
-                  alt="DAV Logo" 
+                <img
+                  src="/dav.png"
+                  alt="DAV Logo"
                   className="h-12 w-auto hover:opacity-80 transition-opacity"
                   onError={(e) => {
-                    e.target.src = 'https://via.placeholder.com/120x48/ffffff/000000?text=DAV';
+                    e.target.src =
+                      "https://via.placeholder.com/120x48/ffffff/000000?text=DAV";
                   }}
                 />
               </a>
@@ -94,7 +97,8 @@ const AboutUs = () => {
               alt="Vision & Mission"
               className="w-full h-full object-cover object-right"
               onError={(e) => {
-                e.target.src = 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';
+                e.target.src =
+                  "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80";
               }}
             />
           </div>
@@ -110,7 +114,8 @@ const AboutUs = () => {
               alt="Create"
               className="w-full h-full object-cover object-left"
               onError={(e) => {
-                e.target.src = 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';
+                e.target.src =
+                  "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80";
               }}
             />
           </div>
@@ -149,7 +154,8 @@ const AboutUs = () => {
               alt="Find Create Introduce"
               className="w-full h-full object-cover"
               onError={(e) => {
-                e.target.src = 'https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';
+                e.target.src =
+                  "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80";
               }}
             />
           </div>
@@ -165,7 +171,8 @@ const AboutUs = () => {
               alt="New Technologies"
               className="w-full h-full object-cover"
               onError={(e) => {
-                e.target.src = 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';
+                e.target.src =
+                  "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80";
               }}
             />
           </div>
@@ -207,7 +214,8 @@ const AboutUs = () => {
               alt="Market Research"
               className="w-full h-full object-cover"
               onError={(e) => {
-                e.target.src = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';
+                e.target.src =
+                  "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80";
               }}
             />
           </div>
@@ -223,7 +231,8 @@ const AboutUs = () => {
               alt="Futuristic Drive"
               className="w-full h-full object-cover"
               onError={(e) => {
-                e.target.src = 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';
+                e.target.src =
+                  "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80";
               }}
             />
           </div>
@@ -246,9 +255,11 @@ const AboutUs = () => {
         <div className="grid md:grid-cols-2 h-full">
           <div className="bg-black flex flex-col justify-center px-8 lg:px-16">
             <div className="space-y-8">
-              <button className="font-outfit border border-gray-500 text-gray-300 px-8 py-3 rounded hover:bg-gray-800 transition-colors duration-300">
-                Contact Us
-              </button>
+              <Link to="/lifestyleav" className="block">
+                <button className="font-outfit border border-gray-500 text-gray-300 px-8 py-3 rounded hover:bg-gray-800 transition-colors duration-300">
+                  Contact Us
+                </button>
+              </Link>
             </div>
           </div>
           <div className="h-full">
@@ -257,7 +268,8 @@ const AboutUs = () => {
               alt="Contact Us"
               className="w-full h-full object-cover"
               onError={(e) => {
-                e.target.src = 'https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';
+                e.target.src =
+                  "https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80";
               }}
             />
           </div>

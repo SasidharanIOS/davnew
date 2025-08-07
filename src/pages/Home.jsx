@@ -28,8 +28,8 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white font-outfit">
-      {/* Fixed Header with Logo */}
-      <header className={`fixed top-0 left-0 z-50 p-6 transition-opacity duration-300 ${showLogo ? 'opacity-100' : 'opacity-0'}`}>
+      {/* Header with Logo - Now scrollable */}
+      <header className={`absolute top-0 left-0 z-50 p-6 transition-opacity duration-300 ${showLogo ? 'opacity-100' : 'opacity-0'}`}>
         <Link to="/" className="block">
           <img 
             src="/dav.png" 

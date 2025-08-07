@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from "react-router-dom";
 
 const Brands = () => {
   const [activeFilter, setActiveFilter] = useState('ALL');
@@ -319,8 +320,8 @@ const Brands = () => {
                 className="group transition-all duration-500 hover:-translate-y-2"
                 style={{ transitionDelay: `${index * 50}ms` }}
               >
-                <div className="bg-white border border-gray-700 p-6 hover:bg-gray-100 hover:border-gray-500 transition-all duration-500 h-full flex flex-col items-center justify-center text-center">
-                  <div className="w-full h-20 flex items-center justify-center mb-4">
+                <div className="bg-white border border-gray-700 px-3 py-4 hover:bg-gray-100 hover:border-gray-500 transition-all duration-500 flex flex-col items-center justify-center text-center min-h-[140px]">
+                  <div className="w-full h-14 flex items-center justify-center mb-2">
                     <img
                       src={brand.logo}
                       alt={`${brand.name} logo`}
@@ -330,13 +331,13 @@ const Brands = () => {
                       }}
                     />
                   </div>
-                  <h3 className="text-sm font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                  <h3 className="text-sm font-semibold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors duration-300">
                     {brand.name}
                   </h3>
-                  <p className="text-xs text-gray-600 font-light opacity-0 group-hover:opacity-100 transition-opacity duration-300 mb-2">
+                  <p className="text-xs text-gray-600 font-light opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     {brand.description}
                   </p>
-                  <div className="mt-2 px-3 py-1 bg-gray-800 text-xs text-white font-medium border border-gray-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="px-2 py-1 bg-gray-800 text-xs text-white font-medium border border-gray-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     {brand.category}
                   </div>
                 </div>
@@ -429,9 +430,12 @@ const Brands = () => {
               <p className="text-gray-300 text-sm md:text-base font-light leading-relaxed">
                 Discover the perfect audio-visual solution for your space with our premium brand partners.
               </p>
+              <Link to="/contact" className="block">
               <button className="border border-gray-500 text-gray-300 font-medium px-8 py-3 hover:bg-gray-800 hover:border-gray-400 transition-colors duration-300">
                 Contact Our Experts
               </button>
+              </Link>
+            
             </div>
           </div>
           <div className="h-full">
